@@ -12,6 +12,7 @@ import java.util.Optional;
  * Time: 오전 8:47
  * Comments:
  */
+
 public interface MemberRepository {
     Member save(Member member);
     Optional<Member> findById(Long id);
