@@ -1,5 +1,7 @@
 package hello.hellospring.domain;
 
+import javax.persistence.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: pkm16
@@ -7,9 +9,14 @@ package hello.hellospring.domain;
  * Time: 오전 8:45
  * Comments:
  */
+
+@Entity
 public class Member {
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    //@Column(name = "username")
     private String name;
 
     public Long getId() {
